@@ -33,7 +33,7 @@ Next, in a shell in your local clone of `questioner-problems`:
 ```sh
 git remote rename origin upstream
 git remote add origin <url>
-git push -u origin master
+git push -u origin main
 ```
 
 Where `<url>` is the URL of the private repository you created above.
@@ -46,7 +46,7 @@ committed any of your latest changes. Next, run the following commands:
 
 ```sh
 git fetch upstream
-git merge upstream/master
+git merge upstream/main
 ```
 
 Assuming you are working in your own package as suggested below, changes that we make upstream should not conflict with
