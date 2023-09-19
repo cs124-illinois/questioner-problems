@@ -53,6 +53,12 @@ Assuming you are working in your own package as suggested below, changes that we
 your local changes. However, when you receive upstream changes it is useful to rerun all of your validations. Simply use
 the "Reset All Validations" IntelliJ run configuration and then "Test All".
 
+### Java Version
+
+`questioner` requires Java 17, which you will need to download and install to use this tool.
+If you are on a UNIX-like system, including MacOS, we suggest using [`asdf`](https://asdf-vm.com/) to manage tools versions.
+The repository includes an `asdf` `.tool-versions` configuration file specifying Java 17.
+
 ## Getting Started
 
 The best approach is to work through the following examples in order. Each has an accompanying YouTube video tutorial.
