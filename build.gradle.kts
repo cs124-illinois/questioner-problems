@@ -69,3 +69,8 @@ tasks.withType<KotlinCompile> {
 tasks.detekt {
   dependsOn(tasks.generateQuestionMetatests)
 }
+java {
+  toolchain {
+    languageVersion.set(JavaLanguageVersion.of(17))
+  }
+}
