@@ -11,8 +11,8 @@ import edu.illinois.cs.cs125.questioner.lib.Correct;
  *
  * 1. Constructor that takes a `int` parameter `speed` and a second `weight`.
  * Creates a new `Cougar` with the passed speed and weight.
- * You should call the `Feliform` constructor and pass it the `String` "cougar" to identify the type of this
- * feliform.
+ * You should call the `Feliform` constructor and pass it the `String` "cougar" to identify the type
+ * of this feliform.
  * 1. Public instance method `dangerousness` that takes no arguments and returns an `int`.
  * Return the dangerousness of this cougar which equals its speed times its weight.
  * 1. Override `public boolean equals(Object other)`.

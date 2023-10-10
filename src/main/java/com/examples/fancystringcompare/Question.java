@@ -4,7 +4,8 @@ import edu.illinois.cs.cs125.questioner.lib.Correct;
 import edu.illinois.cs.cs125.questioner.lib.Wrap;
 
 /*
- * Write a method `fancyCompare` that takes two `String` arguments. If the two `String`s are equal, return -1.
+ * Write a method `fancyCompare` that takes two `String` arguments. If the two `String`s are equal,
+ * return -1.
  * Otherwise, return the length of the longer `String`.
  * You should `assert` that both inputs are not `null`.
  */

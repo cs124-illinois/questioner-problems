@@ -11,11 +11,13 @@ import java.util.Random;
 
 /*
  * Define a public class named `Squirrel`.
- * The `Squirrel` constructor should accept a `String` name, `String` tree, and `int` acorns, in that order.
- * Reject `null` names and trees using `assert`, and also `assert` that acorns is greater than 0 and less than or
- * equal to 24.
+ * The `Squirrel` constructor should accept a `String` name, `String` tree, and `int` acorns,
+ * in that order.
+ * Reject `null` names and trees using `assert`, and also `assert` that acorns is greater than 0
+ * and less than or equal to 24.
  * (Squirrels don't get too greedy and never acquire more acorns than that!)
- * Override equals and consider two `Squirrel` instances to be equal if they have the same name and tree.
+ * Override equals and consider two `Squirrel` instances to be equal if they have the same name
+ * and tree.
  * Do not provide getters or setters for your variables or expose them publicly.
  */
 

@@ -9,7 +9,8 @@ import java.util.List;
 import java.util.Random;
 
 /*
- * Write a method named `equals88` that returns `true` if its `int` argument is equal to 88, our magic number.
+ * Write a method named `equals88` that returns `true` if its `int` argument is equal to 88,
+ * our magic number.
  */
 
 @Correct(name = "Equals 88", author = "challen@illinois.edu", version = "2021.6.0")

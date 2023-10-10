@@ -6,9 +6,9 @@ plugins {
   kotlin("jvm") version "1.9.10"
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
-  id("org.jmailen.kotlinter") version "3.16.0"
-  id("com.github.cs124-illinois.questioner") version "2023.9.4"
-  id("com.github.ben-manes.versions") version "0.48.0"
+  id("org.jmailen.kotlinter") version "4.0.0"
+  id("com.github.cs124-illinois.questioner") version "2023.10.1"
+  id("com.github.ben-manes.versions") version "0.49.0"
   id("io.gitlab.arturbosch.detekt") version "1.23.1"
 }
 repositories {
@@ -18,7 +18,7 @@ repositories {
   maven("https://maven.codeawakening.com")
 }
 dependencies {
-  implementation("com.github.cs124-illinois.questioner:lib:2023.9.4")
+  implementation("com.github.cs124-illinois.questioner:lib:2023.10.1")
 }
 tasks.withType<Test> {
   useJUnitPlatform()
@@ -41,7 +41,7 @@ googleJavaFormat {
   toolVersion = "1.15.0"
 }
 checkstyle {
-  toolVersion = "8.45"
+  toolVersion = "10.12.4"
 }
 tasks.dependencyUpdates {
   fun String.isNonStable() = !(

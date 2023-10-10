@@ -5,7 +5,8 @@ import edu.illinois.cs.cs125.questioner.lib.Correct;
 /*
  * Define and implement a `public` class `Counter`.
  * `Counter` should provide a single public constructor that accepts an `int` parameter.
- * It should also provide `increment` and `decrement` methods, both taking no parameters and returning `void`.
+ * It should also provide `increment` and `decrement` methods, both taking no parameters and
+ * returning `void`.
  * `increment` should increase the stored count, while `decrement` should decrease it.
  * Finally, provide a `getValue` method that returns the stored value.
  */

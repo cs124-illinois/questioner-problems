@@ -5,12 +5,12 @@ root = true
 indent_style = space
 indent_size = 2
 insert_final_newline = false
-
-[*.java]
-max_line_length = 100
-
-[*.kt]
-max_line_length = 120
-
 end_of_line = lf
 charset = utf-8
+
+[*.java]
+max_line_length = 120
+
+[*.kt]
+ktlint_code_style = intellij_idea
+ktlint_standard_package-name = disabled

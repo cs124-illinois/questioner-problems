@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Random;
 
 /*
- * Write a class method that provides an implementation of factorial, accepting and returning `long` arguments.
+ * Write a class method that provides an implementation of factorial, accepting and returning
+ * `long` arguments.
  * Throw an `IllegalArgumentException` on invalid inputs.
  * Your implementation can be recursive or not.
  */

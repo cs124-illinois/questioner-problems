@@ -11,7 +11,8 @@ import java.util.List;
 import java.util.Random;
 
 /*
- * Write a function `combine` that, given two `String` arguments, returns the second appended to the first.
+ * Write a function `combine` that, given two `String` arguments, returns the second appended to
+ * the first.
  * Except you should omit the first two characters of each `String`.
  * For example, given `Java` and `Kotlin`, you would return `vatlin`.
  * You can assume that each `String` is of length at least two.
