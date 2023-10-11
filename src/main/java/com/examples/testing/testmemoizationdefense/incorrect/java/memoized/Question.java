@@ -2,7 +2,7 @@ package com.examples.testing.testmemoizationdefense.incorrect.java.memoized;
 
 import edu.illinois.cs.cs125.questioner.lib.Incorrect;
 
-@Incorrect(reason = "classsize")
+@Incorrect("classsize")
 public class Question {
   int returnValue(int value) {
     int[] values = {
