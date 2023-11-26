@@ -6,7 +6,6 @@ import edu.illinois.cs.cs125.questioner.lib.CheckFeatures;
 import edu.illinois.cs.cs125.questioner.lib.Correct;
 import edu.illinois.cs.cs125.questioner.lib.FeatureCheckException;
 import edu.illinois.cs.cs125.questioner.lib.Language;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,9 +13,13 @@ import java.util.List;
  * Test to ensure that we can detect unnecessary Kotlin setter or getter overrides.
  */
 
-@Correct(name = "Test Bad Kotlin Getter Setter", version = "2023.10.0", author = "challen@illinois.edu")
+@Correct(
+    name = "Test Bad Kotlin Getter Setter",
+    version = "2023.10.0",
+    author = "challen@illinois.edu")
 public class Example {
   private String name;
+
   public Example(String setName) {
     name = setName;
   }
@@ -30,7 +33,8 @@ public class Example {
   }
 
   @CheckFeatures
-  private static List<String> checkFeatures(Language language, Features solution, Features submission) {
+  private static List<String> checkFeatures(
+      Language language, Features solution, Features submission) {
     if (language == Language.kotlin) {
       if (submission.getFeatureMap().containsKey(FeatureName.GETTER)) {
         throw new FeatureCheckException("Solution overrides a getter unnecessarily");

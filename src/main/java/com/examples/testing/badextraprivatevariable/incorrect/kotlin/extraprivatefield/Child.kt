@@ -1,7 +1,6 @@
 package com.examples.testing.badextraprivatevariable.incorrect.kotlin.extraprivatefield
 
 import com.examples.testing.badextraprivatevariable.Parent
-import edu.illinois.cs.cs125.questioner.lib.AlsoCorrect
 import edu.illinois.cs.cs125.questioner.lib.Incorrect
 
 @Incorrect("features")

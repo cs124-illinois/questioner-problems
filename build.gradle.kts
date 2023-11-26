@@ -6,8 +6,8 @@ plugins {
   kotlin("jvm") version "1.9.20"
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
-  id("org.jmailen.kotlinter") version "4.0.0"
-  id("com.github.cs124-illinois.questioner") version "2023.11.0"
+  id("org.jmailen.kotlinter") version "4.1.0"
+  id("org.cs124.questioner") version "2023.11.14"
   id("com.github.ben-manes.versions") version "0.49.0"
   id("io.gitlab.arturbosch.detekt") version "1.23.3"
 }
@@ -18,11 +18,12 @@ repositories {
   maven("https://maven.codeawakening.com")
 }
 dependencies {
-  implementation("com.github.cs124-illinois.questioner:lib:2023.11.0")
+  implementation("org.cs124:questioner:2023.11.14")
 }
 tasks.withType<Test> {
   useJUnitPlatform()
   enableAssertions = true
+  environment["JEED_USE_CACHE"] = "true"
   jvmArgs(
     "-ea", "-Xms4G", "-Xmx8G", "--enable-preview", "-XX:+UseZGC",
     "-Dfile.encoding=UTF-8",
