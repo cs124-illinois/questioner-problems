@@ -52,6 +52,9 @@ detekt {
 tasks.check {
   dependsOn("detekt", "checkstyleMain", "googleJavaFormat", "lintKotlinMain")
 }
+tasks.getByName("saveQuestions") {
+  mustRunAfter("detekt", "checkstyleMain", "googleJavaFormat", "lintKotlinMain")
+}
 questioner {
   seed = 124
   maxMutationCount = 256
@@ -64,5 +67,10 @@ tasks.withType<KotlinCompile> {
 java {
   toolchain {
     languageVersion.set(JavaLanguageVersion.of(17))
+  }
+}
+configurations.checkstyle {
+  resolutionStrategy.capabilitiesResolution.withCapability("com.google.collections:google-collections") {
+    select("com.google.guava:guava:0")
   }
 }
