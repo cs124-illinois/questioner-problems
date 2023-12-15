@@ -1,5 +1,3 @@
-@file:Suppress("MagicNumber", "SpellCheckingInspection")
-
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -7,18 +5,14 @@ plugins {
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "4.1.0"
-  id("org.cs124.questioner") version "2023.11.16"
-  id("com.github.ben-manes.versions") version "0.49.0"
-  id("io.gitlab.arturbosch.detekt") version "1.23.3"
+  id("org.cs124.questioner") version "2023.12.1"
+  id("com.github.ben-manes.versions") version "0.50.0"
+  id("io.gitlab.arturbosch.detekt") version "1.23.4"
 }
 repositories {
   mavenLocal()
   mavenCentral()
-  maven("https://jitpack.io")
   maven("https://maven.codeawakening.com")
-}
-dependencies {
-  implementation("org.cs124:questioner:2023.11.16")
 }
 tasks.withType<Test> {
   useJUnitPlatform()
@@ -39,10 +33,10 @@ tasks.withType<Test> {
   )
 }
 googleJavaFormat {
-  toolVersion = "1.15.0"
+  toolVersion = "1.18.1"
 }
 checkstyle {
-  toolVersion = "10.12.4"
+  toolVersion = "10.12.6"
 }
 tasks.dependencyUpdates {
   fun String.isNonStable() = !(
@@ -56,7 +50,7 @@ detekt {
   buildUponDefaultConfig = true
 }
 tasks.check {
-  dependsOn("detekt", "checkstyleMain", "googleJavaFormat", "test")
+  dependsOn("detekt", "checkstyleMain", "googleJavaFormat", "lintKotlinMain")
 }
 questioner {
   seed = 124
@@ -66,9 +60,6 @@ tasks.withType<KotlinCompile> {
   kotlinOptions {
     jvmTarget = JavaVersion.VERSION_17.toString()
   }
-}
-tasks.detekt {
-  dependsOn(tasks.generateQuestionMetatests)
 }
 java {
   toolchain {

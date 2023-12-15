@@ -10,9 +10,7 @@
       </option>
       <option name="taskNames">
         <list>
-          <option value=":test" />
-          <option value="--tests" />
-          <option value="&quot;TestAllQuestions&quot;" />
+          <option value="testAllQuestions" />
         </list>
       </option>
       <option name="vmOptions" value="" />
@@ -20,6 +18,7 @@
     <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
     <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
     <DebugAllEnabled>false</DebugAllEnabled>
+    <RunAsTest>true</RunAsTest>
     <method v="2" />
   </configuration>
 </component>

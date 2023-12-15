@@ -10,10 +10,6 @@
       </option>
       <option name="taskNames">
         <list>
-          <option value="cleanTest" />
-          <option value="googleJavaFormat" />
-          <option value="formatKotlin" />
-          <option value="generateQuestionMetatests" />
           <option value="check" />
         </list>
       </option>
@@ -22,7 +18,7 @@
     <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
     <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
     <DebugAllEnabled>false</DebugAllEnabled>
-    <ForceTestExec>false</ForceTestExec>
+    <RunAsTest>false</RunAsTest>
     <method v="2" />
   </configuration>
 </component>
