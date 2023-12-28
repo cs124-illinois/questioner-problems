@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-  kotlin("jvm") version "1.9.21"
+  kotlin("jvm") version "1.9.22"
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "4.1.0"
@@ -19,9 +19,8 @@ tasks.withType<Test> {
   enableAssertions = true
   environment["JEED_USE_CACHE"] = "true"
   jvmArgs(
-    "-ea", "-Xms4G", "-Xmx8G", "--enable-preview", "-XX:+UseZGC",
-    "-Dfile.encoding=UTF-8",
-    "-XX:-OmitStackTraceInFastThrow",
+    "-ea", "--enable-preview", "-Xmx4G", "-XX:+UseZGC",
+    "-Dfile.encoding=UTF-8", "-XX:-OmitStackTraceInFastThrow",
     "--add-opens", "java.base/java.lang=ALL-UNNAMED",
     "--add-opens", "java.base/java.util=ALL-UNNAMED",
     "--add-exports", "jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED",
