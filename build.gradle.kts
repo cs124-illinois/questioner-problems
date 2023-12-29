@@ -5,7 +5,7 @@ plugins {
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "4.1.1"
-  id("org.cs124.questioner") version "2023.12.1"
+  id("org.cs124.questioner") version "2023.12.2"
   id("com.github.ben-manes.versions") version "0.50.0"
   id("io.gitlab.arturbosch.detekt") version "1.23.4"
 }
