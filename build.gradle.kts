@@ -5,7 +5,7 @@ plugins {
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "4.1.1"
-  id("org.cs124.questioner") version "2024.1.0"
+  id("org.cs124.questioner") version "2024.1.1"
   id("com.github.ben-manes.versions") version "0.50.0"
   id("io.gitlab.arturbosch.detekt") version "1.23.4"
 }
@@ -32,10 +32,10 @@ tasks.withType<Test> {
   )
 }
 googleJavaFormat {
-  toolVersion = "1.18.1"
+  toolVersion = "1.19.2"
 }
 checkstyle {
-  toolVersion = "10.12.6"
+  toolVersion = "10.12.7"
 }
 tasks.dependencyUpdates {
   fun String.isNonStable() = !(
