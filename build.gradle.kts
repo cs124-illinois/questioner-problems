@@ -4,7 +4,7 @@ plugins {
   kotlin("jvm") version "1.9.22"
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
-  id("org.jmailen.kotlinter") version "4.1.1"
+  id("org.jmailen.kotlinter") version "4.2.0"
   id("org.cs124.questioner") version "2024.1.1"
   id("com.github.ben-manes.versions") version "0.50.0"
   id("io.gitlab.arturbosch.detekt") version "1.23.4"

@@ -17,11 +17,7 @@ import java.util.Random;
  * Test feature check using Java 14 switch expression.
  */
 
-@Correct(
-    name = "With Java Switch",
-    version = "2023.12.0",
-    author = "challen@illinois.edu",
-    focused = true)
+@Correct(name = "With Java Switch", version = "2023.12.0", author = "challen@illinois.edu")
 @Wrap
 public class Question {
   String fromDay(int day) {
