@@ -11,6 +11,10 @@ style:
     active: false
   NewLineAtEndOfFile:
     active: false
+  LoopWithTooManyJumpStatements:
+    active: false
+  UseRequireNotNull:
+    active: false
 potential-bugs:
   EqualsWithHashCodeExist:
     active: false
@@ -26,3 +30,6 @@ exceptions:
 complexity:
   ComplexCondition:
     threshold: 6
+naming:
+  PackageNaming:
+    active: false

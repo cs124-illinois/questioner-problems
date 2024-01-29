@@ -5,8 +5,8 @@ plugins {
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "4.2.0"
-  id("org.cs124.questioner") version "2024.1.1"
-  id("com.github.ben-manes.versions") version "0.50.0"
+  id("org.cs124.questioner") version "2024.1.3"
+  id("com.github.ben-manes.versions") version "0.51.0"
   id("io.gitlab.arturbosch.detekt") version "1.23.4"
 }
 repositories {
@@ -49,14 +49,10 @@ detekt {
   buildUponDefaultConfig = true
 }
 tasks.check {
-  dependsOn("detekt", "checkstyleMain", "googleJavaFormat", "lintKotlinMain")
+  dependsOn("detekt", "checkstyleMain", "googleJavaFormat", "lintKotlinMain", "formatKotlinMain")
 }
 tasks.getByName("saveQuestions") {
-  mustRunAfter("detekt", "checkstyleMain", "googleJavaFormat", "lintKotlinMain")
-}
-questioner {
-  seed = 124
-  maxMutationCount = 256
+  mustRunAfter("detekt", "checkstyleMain", "googleJavaFormat", "lintKotlinMain", "formatKotlinMain")
 }
 tasks.withType<KotlinCompile> {
   kotlinOptions {
