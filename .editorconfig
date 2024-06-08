@@ -14,3 +14,5 @@ max_line_length = 120
 [*.kt]
 ktlint_code_style = intellij_idea
 ktlint_standard_package-name = disabled
+ktlint_standard_backing-property-naming = disabled
+ktlint_standard_function-expression-body = disabled
